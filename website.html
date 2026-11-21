@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B and B Travels | Butwal – Tamghas</title>
+<meta name="description" content="Fresh journey by new electric 14-seater from Butwal to Tamghas. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Noto+Sans+Devanagari:wght@400;600;800&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#0d3b36; --pine-2:#14524b; --mist:#f2f6f3; --paper:#ffffff;
+  --marigold:#f5a300; --ink:#15211f; --muted:#51635f; --line:#d6e2dc;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans","Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--mist);line-height:1.6}
+h1,h2,h3,.brand{font-family:"Bricolage Grotesque","Noto Sans Devanagari",sans-serif;line-height:1.15}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+header{background:var(--pine);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:800;font-size:1.25rem}
+.brand span{color:var(--marigold)}
+.lang{display:flex;border:1px solid rgba(255,255,255,.35);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:#fff;padding:7px 14px;font:600 .85rem inherit;font-family:inherit;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--marigold);color:var(--ink)}
+
+.hero{padding:48px 0 72px}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);font-weight:800;max-width:14ch}
+.hero p.sub{margin-top:16px;max-width:46ch;color:#cfe3dc;font-size:1.1rem}
+.cta{display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:var(--marigold);color:var(--ink);font-weight:700;text-decoration:none;padding:15px 26px;border-radius:12px;font-size:1.05rem}
+.cta:hover{background:#ffb81f}
+
+/* The route: the memorable element */
+.route{margin-top:56px;display:flex;align-items:center;gap:12px;font-family:"Bricolage Grotesque","Noto Sans Devanagari",sans-serif;font-weight:700;font-size:1.15rem}
+.route .track{flex:1;height:10px;border-radius:99px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.route .track::after{content:"";position:absolute;inset:0;width:40%;border-radius:99px;background:var(--marigold);animation:drive 5s ease-in-out infinite alternate}
+@keyframes drive{from{transform:translateX(0)}to{transform:translateX(150%)}}
+.route .stop{display:flex;flex-direction:column}
+.route .stop small{font-family:"Noto Sans","Noto Sans Devanagari",sans-serif;font-weight:400;font-size:.8rem;color:#a9c7be}
+.route .stop:last-child{text-align:right}
+
+section{padding:64px 0}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;margin-bottom:28px}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid var(--line);background:var(--paper);border-radius:16px;overflow:hidden}
+.features div{padding:26px 22px;border-right:1px solid var(--line)}
+.features div:last-child{border-right:0}
+.features h3{font-size:1.15rem;margin-bottom:6px;color:var(--pine-2)}
+.features p{color:var(--muted);font-size:.95rem}
+
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px}
+.card h3{font-size:1.2rem;margin-bottom:14px}
+table{width:100%;border-collapse:collapse}
+td,th{text-align:left;padding:10px 0;border-bottom:1px solid var(--line);font-size:.97rem}
+th{color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+.card ul{padding-left:18px;color:var(--ink)}
+.card li{margin-bottom:8px}
+
+.book{background:var(--pine);color:#fff;text-align:center;border-radius:20px;padding:48px 24px}
+.book h2{margin-bottom:10px}
+.book p{color:#cfe3dc;max-width:44ch;margin:0 auto}
+.book .cta{margin-top:24px}
+.num{margin-top:14px;font-size:.95rem;color:#a9c7be}
+
+footer{padding:28px 0 90px;color:var(--muted);font-size:.9rem;text-align:center}
+
+.float{position:fixed;right:16px;bottom:16px;z-index:10;background:#25d366;color:#06301a;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+[data-np]{display:none}
+html[lang="ne"] [data-en]{display:none}
+html[lang="ne"] [data-np]{display:revert}
+html[lang="ne"] .route .stop,html[lang="ne"] .features div,html[lang="ne"] td{line-height:1.5}
+
+@media (max-width:640px){
+  .features div{border-right:0;border-bottom:1px solid var(--line)}
+  .features div:last-child{border-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){.route .track::after{animation:none;width:100%}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">B <span>&amp;</span> B Travels</div>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="btn-en" aria-pressed="true">EN</button>
+        <button id="btn-ne" aria-pressed="false">नेपाली</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>
+        <span data-en>The fresh journey is here.</span>
+        <span data-np>ताजा यात्रा सुरु भयो।</span>
+      </h1>
+      <p class="sub">
+        <span data-en>Our new electric 14-seater runs between Butwal and Tamghas. Quiet, clean and comfortable.</span>
+        <span data-np>बुटवल र तम्घासबीच हाम्रो नयाँ इलेक्ट्रिक १४ सिटे गाडी चल्दैछ। शान्त, सफा र आरामदायी।</span>
+      </p>
+      <a class="cta wa-link" href="#" target="_blank" rel="noopener">
+        <span data-en>Book on WhatsApp</span>
+        <span data-np>व्हाट्सएपमा बुक गर्नुहोस्</span>
+      </a>
+
+      <div class="route" aria-label="Butwal to Tamghas">
+        <div class="stop">
+          <span data-en>Butwal</span><span data-np>बुटवल</span>
+          <small data-en>Start</small><small data-np>प्रस्थान</small>
+        </div>
+        <div class="track" aria-hidden="true"></div>
+        <div class="stop">
+          <span data-en>Tamghas</span><span data-np>तम्घास</span>
+          <small data-en>Arrive</small><small data-np>गन्तव्य</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2><span data-en>Why ride with us</span><span data-np>हामीसँग किन यात्रा गर्ने</span></h2>
+      <div class="features">
+        <div>
+          <h3><span data-en>Brand-new EV</span><span data-np>नयाँ इलेक्ट्रिक गाडी</span></h3>
+          <p><span data-en>Electric, so it is quiet inside with no engine smell.</span><span data-np>इलेक्ट्रिक भएकाले भित्र शान्त छ, इन्जिनको गन्ध छैन।</span></p>
+        </div>
+        <div>
+          <h3><span data-en>14 seats</span><span data-np>१४ सिट</span></h3>
+          <p><span data-en>Small enough to be comfortable, big enough for family and friends.</span><span data-np>आरामदायी हुने गरी सानो, परिवार र साथीभाइका लागि पर्याप्त।</span></p>
+        </div>
+        <div>
+          <h3><span data-en>Direct route</span><span data-np>सिधा मार्ग</span></h3>
+          <p><span data-en>Butwal to Tamghas with a clear schedule.</span><span data-np>बुटवलदेखि तम्घाससम्म स्पष्ट समयतालिका।</span></p>
+        </div>
+        <div>
+          <h3><span data-en>Easy booking</span><span data-np>सजिलो बुकिङ</span></h3>
+          <p><span data-en>Message us on WhatsApp and we confirm your seat.</span><span data-np>व्हाट्सएपमा म्यासेज गर्नुहोस्, हामी सिट पक्का गर्छौं।</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap info">
+      <!-- EDIT: replace the times, price and places below with your real details -->
+      <div class="card">
+        <h3><span data-en>Schedule and fare</span><span data-np>समयतालिका र भाडा</span></h3>
+        <table>
+          <tr><th><span data-en>Butwal → Tamghas</span><span data-np>बुटवल → तम्घास</span></th><td>00:00 AM</td></tr>
+          <tr><th><span data-en>Tamghas → Butwal</span><span data-np>तम्घास → बुटवल</span></th><td>00:00 AM</td></tr>
+          <tr><th><span data-en>Fare per seat</span><span data-np>प्रति सिट भाडा</span></th><td>Rs. 000</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3><span data-en>Pickup points</span><span data-np>चढ्ने ठाउँ</span></h3>
+        <ul>
+          <li><span data-en>Butwal: add your pickup place</span><span data-np>बुटवल: यहाँ चढ्ने ठाउँ लेख्नुहोस्</span></li>
+          <li><span data-en>Tamghas: add your pickup place</span><span data-np>तम्घास: यहाँ चढ्ने ठाउँ लेख्नुहोस्</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" style="padding-top:0">
+    <div class="wrap">
+      <div class="book">
+        <h2><span data-en>Reserve your seat</span><span data-np>आफ्नो सिट रिजर्भ गर्नुहोस्</span></h2>
+        <p><span data-en>Send us your date, number of seats and pickup point on WhatsApp.</span><span data-np>मिति, सिट संख्या र चढ्ने ठाउँ व्हाट्सएपमा पठाउनुहोस्।</span></p>
+        <a class="cta wa-link" href="#" target="_blank" rel="noopener">
+          <span data-en>Chat on WhatsApp</span><span data-np>व्हाट्सएपमा च्याट गर्नुहोस्</span>
+        </a>
+        <div class="num" id="num"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> B and B Travels · <span data-en>Butwal, Nepal</span><span data-np>बुटवल, नेपाल</span></div>
+</footer>
+
+<a class="float wa-link" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+
+<script>
+  // EDIT HERE: your WhatsApp number with country code, digits only (Nepal = 977)
+  var WA_NUMBER = "9779800000000";
+
+  var MSG = {
+    en: "Hello B and B Travels, I want to book a seat from Butwal to Tamghas.",
+    ne: "नमस्ते B and B Travels, मलाई बुटवलदेखि तम्घास सिट बुक गर्नु छ।"
+  };
+
+  function setLang(l){
+    document.documentElement.lang = l === "ne" ? "ne" : "en";
+    document.getElementById("btn-en").setAttribute("aria-pressed", l === "en");
+    document.getElementById("btn-ne").setAttribute("aria-pressed", l === "ne");
+    var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(MSG[l]);
+    document.querySelectorAll(".wa-link").forEach(function(a){ a.href = url; });
+    document.getElementById("num").textContent = "+" + WA_NUMBER;
+    try { localStorage.setItem("lang", l); } catch(e){}
+  }
+
+  document.getElementById("btn-en").onclick = function(){ setLang("en"); };
+  document.getElementById("btn-ne").onclick = function(){ setLang("ne"); };
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  var saved = "en";
+  try { saved = localStorage.getItem("lang") || "en"; } catch(e){}
+  setLang(saved);
+</script>
+</body>
+</html>
